@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>CRUD com LocalStorage</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Formulário - Cadastro de Clientes</h1>
+
+<form id="formCliente">
+    <input type="hidden" id="indexEdicao">
+    <input type="text" id="nome" placeholder="Nome" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="tel" id="telefone" placeholder="Telefone" required>
+    <button type="submit" class="add">Salvar</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody id="listaClientes"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
